@@ -1,0 +1,17 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "INSERT INTO products (id, name, category, unit_price)\n               VALUES ($1, $2, $3, $4)\n               ON CONFLICT (id) DO NOTHING",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Text",
+        "Text",
+        "Text",
+        "Numeric"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "e27aec5fff37a7e2d30d5fb716d2d438e129ff13e38bb0956b42a725a79a1213"
+}

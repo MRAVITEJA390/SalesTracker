@@ -1,0 +1,17 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "INSERT INTO customers (id, name, email, address)\n               VALUES ($1, $2, $3, $4)\n               ON CONFLICT (id) DO NOTHING",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Text",
+        "Text",
+        "Text",
+        "Text"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "738db0f81a6c059e32bd8b397f0fc11479e49853b885d372aba19b7ee1417a48"
+}

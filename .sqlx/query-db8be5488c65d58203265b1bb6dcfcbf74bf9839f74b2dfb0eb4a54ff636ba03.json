@@ -1,0 +1,22 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "INSERT INTO regions (name)\n               VALUES ($1)\n               ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name\n               RETURNING id",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Int4"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Text"
+      ]
+    },
+    "nullable": [
+      false
+    ]
+  },
+  "hash": "db8be5488c65d58203265b1bb6dcfcbf74bf9839f74b2dfb0eb4a54ff636ba03"
+}

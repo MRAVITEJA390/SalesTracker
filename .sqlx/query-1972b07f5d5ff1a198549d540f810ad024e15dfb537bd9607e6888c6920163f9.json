@@ -1,0 +1,15 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "INSERT INTO order_regions (order_id, region_id)\n               VALUES ($1, $2)\n               ON CONFLICT DO NOTHING",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Text",
+        "Int4"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "1972b07f5d5ff1a198549d540f810ad024e15dfb537bd9607e6888c6920163f9"
+}

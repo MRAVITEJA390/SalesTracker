@@ -1,0 +1,18 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "INSERT INTO orders (id, customer_id, date_of_sale, payment_method, total_amount)\n               VALUES ($1, $2, $3, $4, $5)\n               ON CONFLICT (id) DO NOTHING",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Text",
+        "Text",
+        "Date",
+        "Text",
+        "Numeric"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "1e9ba96dd02c6ac44813116d83a3073fb1be8aac13d878915d3c064e1702a4a4"
+}
